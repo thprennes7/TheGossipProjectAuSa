@@ -1,4 +1,4 @@
 class TagGossip < ApplicationRecord
-  has_many :gossips
-  has_many :tags 
+  belongs_to :gossip
+  belongs_to :tag
 end
